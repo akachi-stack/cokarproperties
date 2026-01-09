@@ -82,24 +82,29 @@
     margin: 1%;
 }
 .logo a{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
 }
 .logo a img.site-logo{
-    max-height: 100px; /* set to requested size */
+    max-height: 64px; /* balanced desktop size to avoid layout shifts */
+    height: auto;
     width: auto;
     display: block;
 }
+#mynav {
+    padding: 8px 0; /* reduce header vertical spacing */
+}
 @media (max-width: 900px) {
   .logo a img.site-logo{
-    max-height: 80px; /* tablet */
+    max-height: 56px; /* tablet */
   }
 }
 @media (max-width: 480px) {
   .logo a img.site-logo{
-    max-height: 64px; /* mobile */
+    max-height: 48px; /* mobile */
   }
-}
+} 
 .link1{
     width: 50%;
     display: flex;

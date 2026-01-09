@@ -96,14 +96,14 @@ body {
     margin: auto;
 }
 .logo{
-    width: 15%;
+    width: auto; /* allow nav rules to control sizing */
     margin: 1%;
 }
 .logo a{
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #6a0dad;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+    color: inherit; /* use color from nav if needed */
 }
 .link1{
     width: 50%;
