@@ -423,6 +423,39 @@
     });
 </script>
 
+<!-- Ensure hamburger mobile toggle works on this page as on others -->
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    const hamburger = document.querySelector('.hamburger');
+    const dropdownBox = document.getElementById('dropdownBox');
+    const exitIcon = document.getElementById('exitIcon');
+    const mobileLinks = document.querySelectorAll('#navcon-mobile li a');
+
+    if (!dropdownBox) return;
+
+    if (hamburger) {
+      hamburger.addEventListener('click', function(){
+        dropdownBox.style.display = 'flex';
+        dropdownBox.classList.add('animate__rollIn');
+      });
+    }
+
+    if (exitIcon) {
+      exitIcon.addEventListener('click', function(){
+        dropdownBox.style.display = 'none';
+        dropdownBox.classList.remove('animate__rollIn');
+      });
+    }
+
+    if (mobileLinks && mobileLinks.length) {
+      mobileLinks.forEach(link => link.addEventListener('click', function(){
+        dropdownBox.style.display = 'none';
+        dropdownBox.classList.remove('animate__rollIn');
+      }));
+    }
+  });
+</script>
+
 </body>
 </html>
 
