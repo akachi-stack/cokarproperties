@@ -364,7 +364,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  opacity: 0.7; /* Slight transparency for overlay effect */
+  opacity: 0.9; /* Increased opacity for better visibility */
 }
 
 .hero-overlay {
@@ -757,7 +757,7 @@ body {
 ================================ */
 .testimonials-section {
   padding: 100px 5%;
-  background: linear-gradient(135deg, #6a0dad 0%, #FFD700 50%, #FFA500 100%);
+  background: linear-gradient(135deg, #6a0dad 0%, #000000 100%);
   color: white;
   width: 100%;
 }
