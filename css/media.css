@@ -102,7 +102,6 @@
     }
     .product-wrapper{
         flex-direction: column;
-        border: 1px solid black;
         padding-bottom: 2%;
         margin: 3%;
     }
@@ -111,7 +110,6 @@
     }
     .product-wrapper1{
         flex-direction: column;
-        border: 1px solid black;
         padding-bottom: 2%;
         margin: 3%;
     }
@@ -120,7 +118,6 @@
     }
     .product-wrapper2{
         flex-direction: column;
-        border: 1px solid black;
         padding-bottom: 2%;
         margin: 3%;
     }
@@ -178,7 +175,9 @@
 
 /* For iPhone 12 Pro */
 @media screen and (max-width: 390px) {
-    
+    .investor{
+        margin: -5% !important;
+    }
 }
 
 @media screen and (max-width: 375px) {

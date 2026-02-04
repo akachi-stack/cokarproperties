@@ -6,18 +6,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="">
   <title>Cokar Properties – Services</title>
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/services.css" />
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/testimonial.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/media.css">
+  <!-- Resource hints -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Preload hero image and combined CSS to reduce requests -->
+  <link rel="preload" as="image" href="img/african-american-lady-safety-helmet-eyeglasses-near-building-construction.jpg">
+  <!-- Combined CSS to reduce requests -->
+  <link rel="stylesheet" href="css/main.min.css" />
   <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
@@ -25,7 +26,7 @@
   <!-- ==========================
        NAVIGATION BAR
   =========================== -->
-<section id="dropdownBox" class="animate__animated">
+  <section id="dropdownBox" class="animate__animated">
              <div id="exitIcon">X</div>
 
              <ul id="navcon-mobile">
@@ -51,22 +52,21 @@
                 <li><a href="about.html">About Us</a></li>
             </ul>
 
-            <div class="btn">
+            <div class="bassey">
             <button class="nav-btn"><a href="ai.html">Cokar AI</a></button>
             </div>
             <img src="img/icons8-drag-list-down-48[1].png" alt="hamburger" class="hamburger">
         </nav>
         <hr>
-    </header>
 
  <!-- ==========================
      HERO SECTION WITH HTML BACKGROUND IMAGE
 ========================== -->
 <header class="hero">
   <div class="hero-overlay"></div>
-  <div class="hero-bg-wrapper">
-    <img src="img/african-american-lady-safety-helmet-eyeglasses-near-building-construction.jpg" class="hero-bg" alt="Hero Image">
-  </div>
+   <div class="hero-bg-wrapper">
+      <img src="img/african-american-lady-safety-helmet-eyeglasses-near-building-construction.jpg" class="hero-bg" alt="Hero Image" loading="eager">
+    </div>
   </div>
   <div class="hero-content">
     <h1 class="hero-title">Professional Property Management</h1>
@@ -124,6 +124,32 @@
         <a href="#" class="hero-cta">Learn More</a>
       </div>
 
+      <div class="service-box fade-in delay-4">
+        <i class="ri-tools-line service-icon"></i>
+        <h3>Property Insurance</h3>
+        <p>We ensure your property is adequately insured against risks and liabilities. Our insurance managers provides comprehensive coverage options for fire outbreaks, theft, and natural disasters.</p>
+        <ul>
+          <li>Flexible insurance packages tailored to your needs</li>
+          <li>Comprehensive coverage for property damage and liability</li>
+          <li>Quick claims processing and 24/7 support</li>
+          <li>Regular policy reviews and updates</li>
+        </ul><br><br>
+        <a href="#" class="hero-cta">Learn More</a>
+      </div>
+
+      <div class="service-box fade-in delay-4">
+        <i class="ri-tools-line service-icon"></i>
+        <h3>Property Registration</h3>
+        <p>We ensure your property is properly registered and legally protected. Our team handles all registration processes, ensuring compliance with local laws and regulations.</p>
+        <ul>
+          <li>Legal documentation and title verification</li>
+          <li>Property registration with relevant authorities</li>
+          <li>Ownership transfer and change management</li>
+          <li>Regular policy reviews and updates</li>
+        </ul><br><br>
+        <a href="#" class="hero-cta">Learn More</a>
+      </div>
+
       <div class="service-box fade-in delay-6">
         <i class="ri-lightbulb-line service-icon"></i>
         <h3>Consultation</h3>
@@ -147,7 +173,7 @@
 
     <!-- PROPERTY 1 -->
     <div class="property-card">
-      <img src="img/house-8458547.jpg" class="property-img" alt="Lekki Apartment">
+      <img src="img/house-8458547.jpg" class="property-img" alt="Lekki Apartment" loading="lazy">
       <h3 class="property-name">Luxury Apartment – Lekki Phase 1</h3>
       <p class="property-short">Premium serviced apartment with waterfront access.</p>
       <button class="property-btn" data-modal="prop-modal-1">View Details</button>
@@ -155,7 +181,7 @@
 
     <!-- PROPERTY 2 -->
     <div class="property-card">
-      <img src="img/house-8458547.jpg" class="property-img" alt="Ikeja Duplex">
+      <img src="img/house-8458547.jpg" class="property-img" alt="Ikeja Duplex" loading="lazy">
       <h3 class="property-name">5-Bedroom Detached Duplex – Ikeja GRA</h3>
       <p class="property-short">High-end duplex with home automation and full security.</p>
       <button class="property-btn" data-modal="prop-modal-2">View Details</button>
@@ -163,7 +189,7 @@
 
     <!-- PROPERTY 3 -->
     <div class="property-card">
-      <img src="img/house-8458547.jpg" class="property-img" alt="Office Yaba">
+      <img src="img/house-8458547.jpg" class="property-img" alt="Office Yaba" loading="lazy">
       <h3 class="property-name">Commercial Office Space – Yaba</h3>
       <p class="property-short">Fully serviced office ideal for startups & corporates.</p>
       <button class="property-btn" data-modal="prop-modal-3">View Details</button>
@@ -186,11 +212,11 @@
       and 24/7 security. Perfect for professionals and families.
     </p>
 
-    <div class="prop-slider">
-      <img src="img/house-8458547.jpg">
-      <img src="img/house-8458547.jpg">
-      <img src="img/house-8458547.jpg">
-    </div>
+      <div class="prop-slider">
+        <img src="img/house-8458547.jpg" loading="lazy">
+        <img src="img/house-8458547.jpg" loading="lazy">
+        <img src="img/house-8458547.jpg" loading="lazy">
+      </div>
   </div>
 </div>
 
@@ -206,9 +232,9 @@
     </p>
 
     <div class="prop-slider">
-      <img src="img/house-8458547.jpg">
-      <img src="images/property2-2.jpg">
-      <img src="images/property2-3.jpg">
+      <img src="img/house-8458547.jpg" loading="lazy">
+      <img src="images/property2-2.jpg" loading="lazy">
+      <img src="images/property2-3.jpg" loading="lazy">
     </div>
   </div>
 </div>
@@ -225,9 +251,9 @@
     </p>
 
     <div class="prop-slider">
-      <img src="images/property3-1.jpg">
-      <img src="images/property3-2.jpg">
-      <img src="images/property3-3.jpg">
+      <img src="images/property3-1.jpg" loading="lazy">
+      <img src="images/property3-2.jpg" loading="lazy">
+      <img src="images/property3-3.jpg" loading="lazy">
     </div>
   </div>
 </div>
@@ -275,7 +301,7 @@
     <div class="mts-slide" data-index="0">
       <div class="mts-slide-content">
         <div class="mts-image-wrapper">
-          <img src="img/house-8458547.jpg" alt="Client 1">
+          <img src="img/house-8458547.jpg" alt="Client 1" loading="lazy">
         </div>
         <div class="mts-text-wrapper">
           <p class="mts-testimonial-text">“I couldn’t be happier with my new home! From viewing to move-in, everything was smooth, stress-free, and the landlord was always responsive whenever I had a question. The place is well maintained, clean, and exactly as described. Highly recommend to anyone looking for a hassle-free renting experience”</p>
@@ -288,7 +314,7 @@
     <div class="mts-slide" data-index="1">
       <div class="mts-slide-content">
         <div class="mts-image-wrapper">
-          <img src="img/house-8458547.jpg" alt="Client 2">
+          <img src="img/house-8458547.jpg" alt="Client 2" loading="lazy">
         </div>
         <div class="mts-text-wrapper">
           <p class="mts-testimonial-text">“Testimonial text for client 2.”</p>
@@ -301,7 +327,7 @@
     <div class="mts-slide" data-index="2">
       <div class="mts-slide-content">
         <div class="mts-image-wrapper">
-          <img src="img/house-8458547.jpg" alt="Client 3">
+          <img src="img/house-8458547.jpg" alt="Client 3" loading="lazy">
         </div>
         <div class="mts-text-wrapper">
           <p class="mts-testimonial-text">“Testimonial text for client 3.”</p>
@@ -314,7 +340,7 @@
     <div class="mts-slide" data-index="3">
       <div class="mts-slide-content">
         <div class="mts-image-wrapper">
-          <img src="img/house-8458547.jpg" alt="Client 4">
+          <img src="img/house-8458547.jpg" alt="Client 4" loading="lazy">
         </div>
         <div class="mts-text-wrapper">
           <p class="mts-testimonial-text">“Testimonial text for client 4.”</p>
@@ -327,7 +353,7 @@
     <div class="mts-slide" data-index="4">
       <div class="mts-slide-content">
         <div class="mts-image-wrapper">
-          <img src="img/house-8458547.jpg" alt="Client 5">
+          <img src="img/house-8458547.jpg" alt="Client 5" loading="lazy">
         </div>
         <div class="mts-text-wrapper">
           <p class="mts-testimonial-text">“Testimonial text for client 5.”</p>
@@ -384,9 +410,7 @@
   <!-- ==========================
        EXTERNAL JS
   =========================== -->
-  <script src="js/media.js"></script>
-  <script src="js/testimonial.js"></script>
-  <script src="js/services.js"></script>
+  <script src="js/main.min.js" defer></script>
 
 
 

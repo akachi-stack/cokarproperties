@@ -11,22 +11,20 @@
 #products{
     width: 100%;
     background-color: white;
-    padding: 4%;
     margin-bottom: 2% !important;
 }
 .product-wrapper{
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
-    background-color: whitesmoke !important;
     color: black;
     margin-bottom: 10%;
 }
 .product-wrapper div{
     width: 50%;
+    padding: 5%;
     text-align: center;
     margin: auto;
 }
@@ -54,16 +52,15 @@
 .product-wrapper1{
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
-    background-color: whitesmoke !important;
     color: black;
     margin-bottom: 10%;
 }
 .product-wrapper1 div{
     width: 50%;
+    padding: 5%;
     text-align: center;
 }
 .product-wrapper1 video{
@@ -76,16 +73,15 @@
 .product-wrapper2{
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 95%;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
-    background-color: whitesmoke !important;
     color: black;
     margin-bottom: 10%;
 }
 .product-wrapper2 div{
     width: 50%;
+    padding: 5%;
     text-align: center;
     margin: auto;
 }
