@@ -16,6 +16,10 @@
     .btn{
         display: none;
     }
+    /* also hide the .bassey CTA used on some pages so mobile layout matches */
+    .bassey{
+        display: none;
+    }
     .hamburger{
         display: flex;
     }
