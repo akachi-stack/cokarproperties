@@ -375,48 +375,50 @@
 
    <!-- FLOATING CONTACT BUTTONS -->
 <div class="floating-buttons">
-    <!-- WhatsApp Main Button -->
-    <div class="float-btn whatsapp-btn" id="whatsappMainBtn">
-        <span class="icon">💬</span>
-    </div>
+  <button class="float-btn whatsapp-btn" id="openWhatsapp" aria-label="Open WhatsApp chat">
+    <span class="icon">💬</span>
+  </button>
 
-    <!-- Call Button -->
-    <a href="tel:+2348012345678" class="float-btn call-btn">
-        <span class="icon">📞</span>
-    </a>
+  <a href="tel:+2348012345678" class="float-btn call-btn">
+    <span class="icon">📞</span>
+  </a>
 </div>
 
-<!-- WHATSAPP POPUP -->
+<!-- ================= WHATSAPP CHAT POPUP ================= -->
 <div class="whatsapp-popup" id="whatsappPopup">
-    <div class="popup-header">
-        <span>Real Estate Support</span>
-        <button id="closePopup">✖</button>
-    </div>
+  <div class="popup-header">
+    <h4>Chat with Cokar</h4>
+    <span id="closeWhatsapp">&times;</span>
+  </div>
 
-    <div class="popup-body">
-        <p>Hello 👋</p>
-        <p>How can we help you today?</p>
+  <div class="popup-body">
+    <p style="color: black !important;">
+      Hello 👋  
+      How can we help you today?
+    </p>
+  </div>
 
-        <a href="https://wa.me/2348012345678?text=Hello%2C%20I'm%20interested%20in%20one%20of%20your%20properties." 
-           target="_blank" 
-           class="chat-now-btn">
-            💬 Chat on WhatsApp
-        </a>
-    </div>
+  <a
+    href="https://wa.me/2348012345678?text=Hello%2C%20I'm%20interested%20in%20your%20services."
+    target="_blank"
+    class="popup-action"
+  >
+    Start Chat
+  </a>
 </div>
 
 <script>
-    // Toggle popup
-    const mainBtn = document.getElementById("whatsappMainBtn");
-    const popup = document.getElementById("whatsappPopup");
-    const closePopup = document.getElementById("closePopup");
+    // WhatsApp popup functionality
+    const openWhatsapp = document.getElementById("openWhatsapp");
+    const whatsappPopup = document.getElementById("whatsappPopup");
+    const closeWhatsapp = document.getElementById("closeWhatsapp");
 
-    mainBtn.addEventListener("click", () => {
-        popup.classList.toggle("show");
+    openWhatsapp.addEventListener("click", () => {
+        whatsappPopup.classList.toggle("show");
     });
 
-    closePopup.addEventListener("click", () => {
-        popup.classList.remove("show");
+    closeWhatsapp.addEventListener("click", () => {
+        whatsappPopup.classList.remove("show");
     });
 </script>
 
