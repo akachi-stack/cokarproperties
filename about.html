@@ -324,17 +324,17 @@
       <article id="footerwrap">
         <div class="footerinfo1">
              <p class="testi"> WHY US</p><br>
-             <p><a href="">Flat-Sharing</a></p><br>
-             <p><a href="">Co-office Space</a></p><br>
-             <p><a href="">Monthly Payments</a></p><br>
-             <p><a href="">Accomodation Loans</a></p><br>
+             <p><a href="https://wa.link/pk2snk">Flat-Sharing</a></p><br>
+             <p><a href="https://wa.link/pk2snk">Co-office Space</a></p><br>
+             <p><a href="https://wa.link/pk2snk">Monthly Payments</a></p><br>
+             <p><a href="https://wa.link/pk2snk">Accomodation Loans</a></p><br>
         </div>
         <div class="footerinfo2">
           <p class="testi"> COMPANY</p><br>
-             <p><a href="">About us</a></p><br>
-             <p><a href="">FAQs</a></p><br>
-             <p><a href="">Careers</a></p><br>
-             <p><a href="">Partnerships</a></p><br>
+             <p><a href="https://wa.link/pk2snk">About us</a></p><br>
+             <p><a href="https://wa.link/pk2snk">FAQs</a></p><br>
+             <p><a href="https://wa.link/pk2snk">Careers</a></p><br>
+             <p><a href="https://wa.link/pk2snk">Partnerships</a></p><br>
         </div>
         </div>
         <div class="footerinfo3">
@@ -358,6 +358,56 @@
         <a href=""><img src="img/icons8-whatsapp.gif" alt=""></a>
       </div>
   </footer>
+
+  <!-- FLOATING CONTACT BUTTONS -->
+  <div class="floating-buttons">
+    <button class="float-btn whatsapp-btn" id="openWhatsapp" aria-label="Open WhatsApp chat">
+      <span class="icon">💬</span>
+    </button>
+
+    <a href="tel:+2348012345678" class="float-btn call-btn">
+      <span class="icon">📞</span>
+    </a>
+  </div>
+
+  <!-- ================= WHATSAPP CHAT POPUP ================= -->
+  <div class="whatsapp-popup" id="whatsappPopup">
+    <div class="popup-header">
+      <h4>Chat with Cokar</h4>
+      <span id="closeWhatsapp">&times;</span>
+    </div>
+
+    <div class="popup-body">
+      <p style="color: black !important;">
+        Hello 👋
+        How can we help you today?
+      </p>
+    </div>
+
+    <a
+      href="https://wa.link/pk2snk"
+      target="_blank"
+      class="popup-action">
+      Start Chat
+    </a>
+  </div>
+
+  <script>
+    // WhatsApp popup functionality
+    const openWhatsapp = document.getElementById("openWhatsapp");
+    const whatsappPopup = document.getElementById("whatsappPopup");
+    const closeWhatsapp = document.getElementById("closeWhatsapp");
+
+    if (openWhatsapp && whatsappPopup && closeWhatsapp) {
+      openWhatsapp.addEventListener("click", () => {
+        whatsappPopup.classList.toggle("show");
+      });
+
+      closeWhatsapp.addEventListener("click", () => {
+        whatsappPopup.classList.remove("show");
+      });
+    }
+  </script>
 
   <script src="js/media.js"></script>
 

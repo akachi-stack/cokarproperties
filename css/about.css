@@ -216,6 +216,136 @@
 }
 
 
+/* =========== FLOATING BUTTONS / WHATSAPP POPUP =========== */
+.floating-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.float-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #25D366;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: 0.3s;
+}
+
+.float-btn .icon {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.call-btn {
+  background: #1DA1F2;
+}
+
+.call-btn .icon {
+  font-size: 28px;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* WHATSAPP POPUP */
+.whatsapp-popup {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.2);
+  transform: scale(0);
+  transform-origin: bottom right;
+  opacity: 0;
+  transition: 0.25s ease-in-out;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.whatsapp-popup.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popup-header {
+  background: #25D366;
+  padding: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-header button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-body {
+  padding: 15px;
+}
+
+.popup-body p {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.chat-now-btn {
+  display: block;
+  margin-top: 12px;
+  background: #25D366;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.chat-now-btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-popup {
+    width: 90%;
+    right: 5%;
+  }
+
+  .float-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .float-btn .icon {
+    font-size: 22px;
+  }
+}
+
+
 
 
 
