@@ -299,3 +299,49 @@
 .section-slide .animate-element.in-view[data-side="left"],
 .section-slide .animate-element.in-view[data-side="right"]{ transform: translateX(0); }
 
+
+
+.logo-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.logo-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+  width: 200px;
+  margin: 0 25px;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.logo-track img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
