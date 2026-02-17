@@ -28,8 +28,9 @@
     text-align: center;
     margin: auto;
 }
-.product-wrapper video{
+.product-wrapper img{
     width: 100%;
+    border-radius: 30px;
 }
 .product-btn{
     padding: 1%;
@@ -258,3 +259,37 @@
         font-size: 22px;
     }
 }
+
+/* Slide-in effect for images inside #products */
+#products img{
+    opacity: 0;
+    transform: translateX(-26px);
+    transition: transform .7s cubic-bezier(.2,.9,.3,1), opacity .6s ease;
+    will-change: transform, opacity;
+}
+#products img.in-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* support for alternating direction when container provides data-side */
+#products img[data-side="right"]{ transform: translateX(26px); }
+#products img[data-side="right"].in-view{ transform: translateX(0); }
+
+/* Section slide-in for content blocks below #products */
+.section-slide .animate-element{
+    opacity: 0;
+    transform: translateY(22px);
+    transition: transform .7s cubic-bezier(.2,.9,.3,1), opacity .6s ease;
+    transition-delay: var(--delay, 0ms);
+}
+.section-slide .animate-element.in-view{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-slide .animate-element[data-side="left"]{ transform: translateX(-22px); }
+.section-slide .animate-element[data-side="right"]{ transform: translateX(22px); }
+.section-slide .animate-element.in-view[data-side="left"],
+.section-slide .animate-element.in-view[data-side="right"]{ transform: translateX(0); }
+
