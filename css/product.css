@@ -20,17 +20,23 @@
     justify-content: center;
     align-items: center;
     color: black;
+    gap: 2rem;
     margin-bottom: 10%;
+    flex-wrap: wrap;
 }
-.product-wrapper div{
-    width: 50%;
+.product-wrapper > div{
+    flex: 1 1 45%;
+    min-width: 220px;
     padding: 5%;
     text-align: center;
-    margin: auto;
 }
 .product-wrapper img{
+    max-width: 100%;
     width: 100%;
+    height: auto;
+    display: block;
     border-radius: 30px;
+    object-fit: cover;
 }
 .product-btn{
     padding: 1%;
