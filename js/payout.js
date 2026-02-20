@@ -1,4 +1,4 @@
-const CART_KEY = "cokar_cart";
+const CART_KEY = "glaze_cart";
 
 const itemsContainer = document.getElementById("payoutItems");
 const totalItemsEl = document.getElementById("totalItems");

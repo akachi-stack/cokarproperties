@@ -1,7 +1,7 @@
-# Image Optimization Script for Cokar Properties
+# Image Optimization Script for Glaze Properties
 # This script compresses hero images to reduce load times
 
-Write-Host "Cokar Properties Image Optimization Script" -ForegroundColor Green
+Write-Host "Glaze Properties Image Optimization Script" -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Green
 
 # Check if images exist

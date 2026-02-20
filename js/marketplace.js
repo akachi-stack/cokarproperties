@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const cartKey = "cokar_cart";
+const cartKey = "glaze_cart";
 
 /* GET CART */
 function getCart() {
