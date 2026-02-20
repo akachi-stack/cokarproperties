@@ -1,18 +1,4 @@
 
-  const openBtn = document.getElementById("openWhatsapp");
-  const popup = document.getElementById("whatsappPopup");
-  const closeBtn = document.getElementById("closeWhatsapp");
-
-  openBtn.addEventListener("click", () => {
-    popup.style.display = "block";
-  });
-
-  closeBtn.addEventListener("click", () => {
-    popup.style.display = "none";
-    closeBtn.style.cursor = "pointer";
-  });
-
-
   document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
 

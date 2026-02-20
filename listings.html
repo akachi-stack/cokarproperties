@@ -236,17 +236,17 @@
       <article id="footerwrap">
         <div class="footerinfo1">
              <p class="testi"> WHY US</p><br>
-             <p><a href="https://wa.link/pk2snk">Flat-Sharing</a></p><br>
-             <p><a href="https://wa.link/pk2snk">Co-office Space</a></p><br>
-             <p><a href="https://wa.link/pk2snk">Monthly Payments</a></p><br>
-             <p><a href="https://wa.link/pk2snk">Accomodation Loans</a></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">Flat-Sharing</button></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">Co-office Space</button></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">Monthly Payments</button></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">Accomodation Loans</button></p><br>
         </div>
         <div class="footerinfo2">
           <p class="testi"> COMPANY</p><br>
-             <p><a href="https://wa.link/pk2snk">About us</a></p><br>
-             <p><a href="https://wa.link/pk2snk">FAQs</a></p><br>
-             <p><a href="https://wa.link/pk2snk">Careers</a></p><br>
-             <p><a href="https://wa.link/pk2snk">Partnerships</a></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">About us</button></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">FAQs</button></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">Careers</button></p><br>
+             <p><button onclick="location.reload()" style="background: none; border: none; cursor: pointer; color: inherit; text-decoration: underline;">Partnerships</button></p><br>
         </div>
         </div>
         <div class="footerinfo3">
@@ -267,7 +267,7 @@
         <a href=""><img src="img/icons8-linkedin-50.png" alt=""></a><br>
         <a href=""><img src="img/icons8-twitter-50[1].png" alt=""></a><br>
         <a href=""><img src="img/icons8-facebook-50.png" alt=""></a><br>
-        <a href=""><img src="img/icons8-whatsapp.gif" alt=""></a>
+        <button onclick="location.reload()" style="background: none; border: none; cursor: pointer;"><img src="img/icons8-whatsapp.gif" alt=""></button>
       </div>
   </footer>
 
@@ -279,50 +279,16 @@
 
     <!-- FLOATING CONTACT BUTTONS -->
 <div class="floating-buttons">
-    <!-- WhatsApp Main Button -->
-    <div class="float-btn whatsapp-btn" id="whatsappMainBtn">
+    <!-- Refresh Button -->
+    <button class="float-btn whatsapp-btn" onclick="location.reload()">
         <span class="icon">💬</span>
-    </div>
+    </button>
 
     <!-- Call Button -->
     <a href="tel:+2348012345678" class="float-btn call-btn">
         <span class="icon">📞</span>
     </a>
 </div>
-
-<!-- WHATSAPP POPUP -->
-<div class="whatsapp-popup" id="whatsappPopup">
-    <div class="popup-header">
-        <span>Real Estate Support</span>
-        <button id="closePopup">✖</button>
-    </div>
-
-    <div class="popup-body">
-        <p>Hello 👋</p>
-        <p>How can we help you today?</p>
-
-        <a href="https://wa.link/pk2snk" 
-           target="_blank" 
-           class="chat-now-btn">
-            💬 Chat on WhatsApp
-        </a>
-    </div>
-</div>
-
-<script>
-    // Toggle popup
-    const mainBtn = document.getElementById("whatsappMainBtn");
-    const popup = document.getElementById("whatsappPopup");
-    const closePopup = document.getElementById("closePopup");
-
-    mainBtn.addEventListener("click", () => {
-        popup.classList.toggle("show");
-    });
-
-    closePopup.addEventListener("click", () => {
-        popup.classList.remove("show");
-    });
-</script>
 
 </body>
 </html>
